@@ -10,4 +10,4 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Build com Gradle
-        run: chmod +x gradlew && ./gradlew build
+        run: gradle build
