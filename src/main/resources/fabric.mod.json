@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "meu-aura-addon",
+  "version": "1.0.0",
+  "name": "Meu Aura Addon",
+  "entrypoints": {
+    "main": ["com.example.addon.ExampleAddon"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "meteor-client": "*"
+  }
+}
