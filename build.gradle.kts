@@ -1,10 +1,3 @@
-pluginManagement {
-    repositories {
-        maven { url = uri("https://maven.fabricmc.net/") }
-        gradlePluginPortal()
-    }
-}
-
 plugins {
     java
     id("fabric-loom") version "1.7.1"
@@ -24,7 +17,7 @@ dependencies {
     mappings("net.fabricmc:yarn:1.21.1+build.3:v2")
     modImplementation("net.fabricmc:fabric-loader:0.16.5")
     
-    // O compileOnly evita que o robô tente baixar o Meteor da rede agora
+    // Usamos compileOnly para evitar erros de rede durante o build
     compileOnly("meteordevelopment:meteor-client:0.5.8")
 }
 
